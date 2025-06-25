@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../aes_from scratch.srcs/sources_1/new/addRoundKey.v" \
+"../../../../aes_from scratch.srcs/sources_1/new/aes_round_core.v" \
+"../../../../aes_from scratch.srcs/sources_1/new/aes_top_level.v" \
+"../../../../aes_from scratch.srcs/sources_1/new/last_round_core.v" \
+"../../../../aes_from scratch.srcs/sources_1/new/mix_column.v" \
+"../../../../aes_from scratch.srcs/sources_1/new/sbox.v" \
+"../../../../aes_from scratch.srcs/sim_1/new/aes_top_level_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

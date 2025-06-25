@@ -1,0 +1,11 @@
+Time resolution is 1 ps
+=== AES Testbench Started ===
+Time=0 | State=x | Key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx | Text=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx | InCnt=x | RoundCnt= x | OutCnt=x | s_valid=x s_ready=x | m_valid=x m_ready=x | m_data=xxxxxxxx | DUT.ciphertext_reg=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Time=5000 | State=0 | Key=00000000000000000000000000000000 | Text=00000000000000000000000000000000 | InCnt=0 | RoundCnt= 0 | OutCnt=0 | s_valid=x s_ready=0 | m_valid=0 m_ready=x | m_data=00000000 | DUT.ciphertext_reg=00000000000000000000000000000000
+TB: Sending 128-bit data: 0123456789abcdef0123456789abcdef at time 65000
+Time=65000 | State=0 | Key=00000000000000000000000000000000 | Text=00000000000000000000000000000000 | InCnt=0 | RoundCnt= 0 | OutCnt=0 | s_valid=1 s_ready=0 | m_valid=0 m_ready=x | m_data=00000000 | DUT.ciphertext_reg=00000000000000000000000000000000
+Time=75000 | State=1 | Key=00000000000000000000000000000000 | Text=00000000000000000000000000000000 | InCnt=0 | RoundCnt= 0 | OutCnt=0 | s_valid=1 s_ready=1 | m_valid=0 m_ready=x | m_data=00000000 | DUT.ciphertext_reg=00000000000000000000000000000000
+Time=85000 | State=1 | Key=00000000000000000000000001234567 | Text=00000000000000000000000000000000 | InCnt=1 | RoundCnt= 0 | OutCnt=0 | s_valid=1 s_ready=1 | m_valid=0 m_ready=x | m_data=00000000 | DUT.ciphertext_reg=00000000000000000000000000000000
+Time=95000 | State=1 | Key=00000000000000000123456789abcdef | Text=00000000000000000000000000000000 | InCnt=2 | RoundCnt= 0 | OutCnt=0 | s_valid=1 s_ready=1 | m_valid=0 m_ready=x | m_data=00000000 | DUT.ciphertext_reg=00000000000000000000000000000000
+Time=105000 | State=1 | Key=00000000000000000123456789abcdef | Text=00000000000000000000000000000000 | InCnt=2 | RoundCnt= 0 | OutCnt=0 | s_valid=0 s_ready=1 | m_valid=0 m_ready=x | m_data=00000000 | DUT.ciphertext_reg=00000000000000000000000000000000
+TB: Key sent. Waiting for EXPAND_KEY state at time 115000.
