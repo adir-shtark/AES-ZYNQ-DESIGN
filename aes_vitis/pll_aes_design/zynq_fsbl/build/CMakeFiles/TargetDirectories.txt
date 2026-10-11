@@ -1,3 +1,0 @@
-C:/Users/Public/Code/AES_verilog/aes_vitis/pll_aes_design/zynq_fsbl/build/CMakeFiles/fsbl.elf.dir
-C:/Users/Public/Code/AES_verilog/aes_vitis/pll_aes_design/zynq_fsbl/build/CMakeFiles/edit_cache.dir
-C:/Users/Public/Code/AES_verilog/aes_vitis/pll_aes_design/zynq_fsbl/build/CMakeFiles/rebuild_cache.dir

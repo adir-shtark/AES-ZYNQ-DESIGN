@@ -1,0 +1,37 @@
+# Track only what is needed to recreate the design:
+#   rebuild Tcl, RTL, packaged IP, configured .xci files,
+#   user constraints, and the application C sources.
+# Vivado output, the Vitis BSP/build, archives, and screenshots stay local.
+
+*
+!*/
+
+!/.gitignore
+!rebuild_project.tcl
+!design_1_bd.tcl
+
+# RTL
+!rtl/**/*.v
+
+# Packaged AES IP and the configured block-design IP instances
+!IP/**/*.xml
+!IP/**/*.tcl
+!IP/**/*.xci
+
+# Constraints folder. There are none in the current design.
+!constraints/**
+!constraints/**/*.xdc
+
+# Application sources. Headers and the linker script are required to build the .c files.
+!SW/aes_vitis/hello_aes_design/src/*.c
+!SW/aes_vitis/hello_aes_design/src/*.h
+!SW/aes_vitis/hello_aes_design/src/lscript.ld
+
+# Generated project trees and tool debris
+work/
+.Xil/
+*.log
+*.jou
+*.str
+*.zip
+*.bak
